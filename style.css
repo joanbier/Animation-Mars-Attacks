@@ -1,0 +1,50 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.space-animation {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./assets/science-fiction-1424446_1920.jpg');
+    background-size: 100%;
+}
+
+.ufo,
+.earth,
+.moon {
+    position: absolute;
+}
+
+.earth {
+    width: 20%;
+    top: 30%;
+    left: 40%;
+}
+
+.moon {
+    width: 10%;
+    top: 30%;
+    left: 58%;
+}
+
+.ufo {
+    width: 20%;
+    z-index: 1;
+}
+
+.ufo:nth-child(1) {
+    top: 40%;
+    left: 10%;
+}
+
+.ufo:nth-child(2) {
+    top: 30%;
+    left: 30%;
+}
+
+.ufo:nth-child(3) {
+    top: 50%;
+    left: 65%;
+}
