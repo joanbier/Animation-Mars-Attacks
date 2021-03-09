@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const elements = document.querySelectorAll('.anim-bg')
 
-    document.addEventListener('mousemove', function (event) {
+
+
+    const animation = (event) => {
         const {
             clientX,
             clientY
@@ -20,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             element.style.transform = `translate(${moveX * ratioX}px, ${moveY * ratioY}px)`
         })
-    })
+    }
+
+    document.addEventListener('mousemove', animation);
+    document.addEventListener('touchmove', animation);
+
 
 })
